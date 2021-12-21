@@ -7,7 +7,7 @@ class About extends React.Component {
             <div className="about-container">
                <div className="about-text">
                     <h3 className="about-title">sobre mim</h3>
-                    <p className="about-p">Atualmente estudo desenvolvimento web e crio projetos sozinho. Gosto de ... </p>
+                    <p className="about-p">Atualmente estudo desenvolvimento web e crio projetos sozinho com novas tecnologias.  </p>
                     <h3 className="about-title">habilidades</h3>
                     {/* <p className="about-p">Javascript</p>
                     <p className="about-p">React</p>

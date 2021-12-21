@@ -1,4 +1,3 @@
-import portoflio from './portoflio logo.svg'
 import './App.css';
 import Menu from './Components/Menu'
 import line from './line.png'
@@ -8,9 +7,9 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <header className="App-header">
+       {/*  <header className="App-header">
           <a href="index.html"><img src={portoflio} className="App-logo" alt="logo" /></a>
-        </header>
+        </header> */}
         
         <div className="line-container">
           <img src={line} className="line" alt="line" height="300" />
