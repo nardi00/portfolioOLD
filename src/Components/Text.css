@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.text-container {
+    align-items: center;
+    text-align: left;
+    width: 45%;
+    height: 80vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.text {
+    font-family: "Montserrat";
+    font-size: 25px;
+    margin-left: 220px;
+    margin-bottom: 160px;
+    letter-spacing: 6px;
+    animation: fadeInUp 1s;
+}
+
+.strong-name {
+    color: #B70606;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.strong-hello {
+    color: rgb(255, 255, 255);
+}
+
+/*Animação*/
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}

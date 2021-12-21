@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import portoflio from './portoflio logo.svg'
 import './App.css';
+import Menu from './Components/Menu'
+import line from './line.png'
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <a href="index.html"><img src={portoflio} className="App-logo" alt="logo" /></a>
+        </header>
+        
+        <div className="line-container">
+          <img src={line} className="line" alt="line" height="300" />
+        </div>
+        <Menu />
+      </div>
+    );
+  }
 }
 
 export default App;

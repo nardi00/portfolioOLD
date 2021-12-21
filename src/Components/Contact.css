@@ -1,0 +1,81 @@
+.contact-container {
+    align-items: center;
+    text-align: left;
+    width: 45%;
+    height: 80vh;
+    float: left;
+    position: absolute;
+    display: flex;
+    color: white;
+    background-color: #201111;
+}
+
+
+.contact-box {
+    margin-left: 220px;
+    margin-bottom: 300px;
+}
+
+.contact-title {
+    font-family: "Montserrat";
+    font-size: 25px;
+    letter-spacing: 6px;
+    animation: fadeInUp 1s;  
+}
+
+.contact-list {
+    list-style-type: none;
+    font-family: "Montserrat";
+    font-size: 21px;
+    animation: fadeInUp 1s;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #B70606;
+}
+
+.anchor {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    font-weight: 800;
+}
+.anchor:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #B70606;
+    height: 2.5px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.anchor:hover:before, .anchor:focus:before, .anchor:active:before {
+    right:0;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
